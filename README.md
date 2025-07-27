@@ -33,3 +33,9 @@ This project is an automated workflow to transform literary short stories into n
 [28 - IN THE RAVINE](./Stories/28%20-%20IN%20THE%20RAVINE/)  
 [29 - THE BISHOP](./Stories/29%20-%20THE%20BISHOP/)  
 [30 - THE FIANCÉE](./Stories/30%20-%20THE%20FIANC%C3%89E/)
+
+## 📦 Requirements 
+Install dependencies:
+```bash
+pip install pedalboard soundfile numpy
+```
