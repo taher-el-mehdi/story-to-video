@@ -19,6 +19,13 @@ def list_scripts():
             "args": [
                 {"flag": "--story", "prompt": "Path to story file text"},
             ]
+        },
+        "3": {
+            "name": "split story by tokens",
+            "script": "./src/scripts/split_story_by_tokens.py",
+            "args": [
+                {"flag": "--story", "prompt": "Path to story file text"},
+            ]
         }
     }
 
