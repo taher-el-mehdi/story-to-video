@@ -2,8 +2,8 @@ import os
 import tiktoken
 
 # === CONFIGURATION ===
-INPUT_FILE = os.path.join("stories", "07 - EASTER NIGHT", 'story_cleaned.txt')        # Your input file
-OUTPUT_DIR = os.path.join("stories", "07 - EASTER NIGHT", 'chunks') 
+INPUT_FILE = os.path.join("stories", "08 - VANKA", 'story_cleaned.txt')        # Your input file
+OUTPUT_DIR = os.path.join("stories", "08 - VANKA", 'chunks') 
 MAX_TOKENS = 1000                   # Tokens per chunk
 ENCODING_NAME = "cl100k_base"       # Tokenizer used by ChatGPT (GPT-4/3.5)
 

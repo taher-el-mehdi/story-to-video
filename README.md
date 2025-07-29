@@ -37,5 +37,6 @@ This project is an automated workflow to transform literary short stories into n
 ## 📦 Requirements 
 Install dependencies:
 ```bash
-pip install pedalboard soundfile numpy
+pip install pedalboard soundfile numpy  
+pip install moviepy
 ```

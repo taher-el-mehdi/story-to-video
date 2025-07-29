@@ -3,7 +3,7 @@ import glob
 import re
 
 cwd = os.getcwd()
-file = os.path.join(cwd,"stories", "07 - EASTER NIGHT", "story_text.txt")
+file = os.path.join(cwd,"stories", "08 - VANKA", "story_text.txt")
 
 with open(file, "r", encoding="utf-8") as f:
     text = f.read()

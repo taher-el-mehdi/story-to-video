@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 import aiofiles
 
 # === CONFIG ===
-INPUT_TEXTS = os.path.join("stories", "07 - EASTER NIGHT", "chunks")
+INPUT_TEXTS = os.path.join("stories", "08 - VANKA", "chunks")
 VOICE_MODEL = "gpt-4o-mini-tts"
 VOICE_NAME = "sage"
 

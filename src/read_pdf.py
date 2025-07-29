@@ -2,13 +2,13 @@ import pymupdf
 import os
 
 # === Configurable Page Range (1-based) ===
-start_reading = 51
-stop_reading = 60
+start_reading = 61
+stop_reading = 64
 
 # === File Paths ===
 cwd = os.getcwd()
 book_path = os.path.join(cwd, "stories", "book.pdf")
-output_dir = os.path.join(cwd, "stories", "07 - EASTER NIGHT")
+output_dir = os.path.join(cwd, "stories", "08 - VANKA")
 story_path = os.path.join(output_dir, "story_text.txt")
 
 # Ensure the output directory exists
@@ -29,3 +29,9 @@ with open(story_path, "w", encoding="utf-8") as out:
         out.write(text)
         print(f"✅ Page {page_index + 1} has been written to 'story_text.txt'")
 print("🎉 Story extraction completed! You can now review 'story_text.txt'.")
+
+# TODO:
+# Make these variables into params
+# output_dir
+# start_reading = 61
+# stop_reading = 64

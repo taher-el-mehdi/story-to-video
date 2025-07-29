@@ -5,8 +5,8 @@ from pedalboard import Pedalboard, Gain
 
 cwd = os.getcwd()
 # === Configuration ===
-AUDIO_FOLDER =  os.path.join(cwd, "Stories","07 - EASTER NIGHT", "audios")
-OUTPUT_FILE = os.path.join(cwd, "Stories","07 - EASTER NIGHT", 'story.wav')
+AUDIO_FOLDER =  os.path.join(cwd, "Stories","08 - VANKA", "audios")
+OUTPUT_FILE = os.path.join(cwd, "Stories","08 - VANKA", 'story.wav')
 
 # === Load and sort audio files ===
 audio_files = sorted([
