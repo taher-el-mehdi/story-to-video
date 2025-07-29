@@ -33,6 +33,13 @@ def list_scripts():
             "args": [
                 {"flag": "--story", "prompt": "Path to story file text"},
             ]
+        },
+        "5": {
+            "name": "Merge audios",
+            "script": "./src/scripts/merge_audio_folder.py",
+            "args": [
+                {"flag": "--story", "prompt": "Path to story file text"},
+            ]
         }
     }
 

@@ -2,11 +2,16 @@ import os
 import soundfile as sf
 import numpy as np
 from pedalboard import Pedalboard, Gain
+import argparse
+
+parser = argparse.ArgumentParser(description="Generate audios")
+parser.add_argument("--story", required=True, help="story folder name.")
+args = parser.parse_args()
 
 cwd = os.getcwd()
 # === Configuration ===
-AUDIO_FOLDER =  os.path.join(cwd, "Stories","08 - VANKA", "audios")
-OUTPUT_FILE = os.path.join(cwd, "Stories","08 - VANKA", 'story.wav')
+AUDIO_FOLDER =  os.path.join(cwd, "Stories",args.story, "audios")
+OUTPUT_FILE = os.path.join(cwd, "Stories",args.story, 'story.wav')
 
 # === Load and sort audio files ===
 audio_files = sorted([
