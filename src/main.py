@@ -1,25 +1,53 @@
-# main.py
-import argparse
 import subprocess
 import os
 
+def list_scripts():
+    return {
+        "1": {
+            "name": "Read pages from PDF and write into story_text for folder of story.",
+            "script": "./src/scripts/read_pdf.py",
+            "args": [
+                {"flag": "--pdf", "prompt": "Path to PDF file"},
+                {"flag": "--start", "prompt": "Start page number"},
+                {"flag": "--stop", "prompt": "Stop page number"},
+                {"flag": "--folder", "prompt": "Output folder name"},
+            ]
+        },
+        "2": {
+            "name": "Clean the story from (Extra whitespace, Newlines and tabs) save it under story_cleaned.txt",
+            "script": "./src/scripts/clean_story.py",
+            "args": [
+                {"flag": "--story", "prompt": "Path to story file text"},
+            ]
+        }
+    }
+
 def main():
-    parser = argparse.ArgumentParser(description="CLI to extract story from PDF.")
-    parser.add_argument("--pdf", required=False, help="Path to the PDF file.")
-    parser.add_argument("--start", type=int, required=True, help="Start page number.")
-    parser.add_argument("--stop", type=int, required=True, help="Stop page number.")
-    parser.add_argument("--folder", required=True, help="Folder name for output.")
+    scripts = list_scripts()
 
-    args = parser.parse_args()
+    print("Steps to make a short story:")
+    for key, val in scripts.items():
+        print(f"{key}. {val['name']}")
 
-    # Call the PDF reader script with args
-    subprocess.run([
-        "python", "./src/scripts/read_pdf.py",
-        "--pdf", args.pdf,
-        "--start", str(args.start),
-        "--stop", str(args.stop),
-        "--folder", args.folder
-    ])
+    choice = input("Enter the number: ").strip()
+
+    if choice not in scripts:
+        print("❌ Invalid choice.")
+        return
+
+    selected = scripts[choice]
+    cmd = ["python", selected["script"]]
+
+    for arg in selected["args"]:
+        default = f" (default: {arg['default']})" if "default" in arg else ""
+        value = input(f"{arg['prompt']}{default}: ").strip()
+        if not value and "default" in arg:
+            value = arg["default"]
+        if value:
+            cmd.extend([arg["flag"], value])
+
+    print("\n🔧 Running:", " ".join(cmd), "\n")
+    subprocess.run(cmd)
 
 if __name__ == "__main__":
     main()
