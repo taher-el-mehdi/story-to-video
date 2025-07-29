@@ -40,6 +40,13 @@ def list_scripts():
             "args": [
                 {"flag": "--story", "prompt": "Path to story file text"},
             ]
+        },
+        "6": {
+            "name": "Merge audio with image to produce a video",
+            "script": "./src/scripts/merge_audio_with_image.py",
+            "args": [
+                {"flag": "--story", "prompt": "Path to story file text"},
+            ]
         }
     }
 
