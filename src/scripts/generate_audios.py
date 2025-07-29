@@ -5,9 +5,14 @@ import logging
 from openai import AsyncOpenAI, OpenAIError, RateLimitError
 from dotenv import load_dotenv
 import aiofiles
+import argparse
+
+parser = argparse.ArgumentParser(description="Generate audios")
+parser.add_argument("--story", required=True, help="story folder name.")
+args = parser.parse_args()
 
 # === CONFIG ===
-INPUT_TEXTS = os.path.join("stories", "08 - VANKA", "chunks")
+INPUT_TEXTS = os.path.join("stories", args.story, "chunks")
 VOICE_MODEL = "gpt-4o-mini-tts"
 VOICE_NAME = "sage"
 

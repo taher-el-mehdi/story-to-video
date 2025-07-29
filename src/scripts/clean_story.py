@@ -6,7 +6,6 @@ import argparse
 def main():
     parser = argparse.ArgumentParser(description="Clean the story from (Extra whitespace, Newlines and tabs)")
     parser.add_argument("--story", required=True, help="story folder name.")
-
     args = parser.parse_args()
 
     cwd = os.getcwd()

@@ -26,6 +26,13 @@ def list_scripts():
             "args": [
                 {"flag": "--story", "prompt": "Path to story file text"},
             ]
+        },
+        "4": {
+            "name": "Generate audios",
+            "script": "./src/scripts/generate_audios.py",
+            "args": [
+                {"flag": "--story", "prompt": "Path to story file text"},
+            ]
         }
     }
 
