@@ -1,8 +1,4 @@
-# 🎬 Short Stories Visualized
-
-This project is an automated workflow to transform literary short stories into narrated and illustrated videos with minimal manual effort.
-
-## 📚 Stories
+# 📚 Short Stories by Anton Chekhov
 [01 - THE DEATH OF A CLERK](./Stories/01%20-%20THE%20DEATH%20OF%20A%20CLERK/)  
 [02 - SMALL FRY](./Stories/02%20-%20Small%20fry/)  
 [03 - THE HUNTSMAN](./Stories/03%20-%20THE%20HUNTSMAN/)  
@@ -33,4 +29,3 @@ This project is an automated workflow to transform literary short stories into n
 [28 - IN THE RAVINE](./Stories/28%20-%20IN%20THE%20RAVINE/)  
 [29 - THE BISHOP](./Stories/29%20-%20THE%20BISHOP/)  
 [30 - THE FIANCÉE](./Stories/30%20-%20THE%20FIANC%C3%89E/)
-

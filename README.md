@@ -2,7 +2,7 @@
 
 This is a command-line Python tool that allows you to convert a PDF story into a video. The tool is modular and broken into six steps:
 
-## 📦 Features
+## 🚀 Steps:
 - 📄 Extract pages from a PDF.
 - 🧹 Clean the extracted text (remove whitespace, newlines, tabs).
 - ✂️ Split story into logical segments based on tokens.
@@ -11,8 +11,7 @@ This is a command-line Python tool that allows you to convert a PDF story into a
 - 🎥 Merge audio with an image to create an MP4 video.
 
 
-## 🚀 How to Use
-
+##  How to Use
 ### 1. Launch the Tool
 ```bash
 python main.py
@@ -20,10 +19,9 @@ python main.py
 
 You will be prompted to enter:
 
-* PDF path
+* PDF path of the book
 * Page range
 * Story name (folder)
-* Other relevant inputs per script
 ### Example prompt:
 ```bash
 python main.py
@@ -43,7 +41,6 @@ python main.py
 | 4    | `generate_audios.py`        | Generates audio clips for each text chunk                                       |
 | 5    | `merge_audio_folder.py`     | Merges audio clips into one audio file                                          |
 | 6    | `merge_audio_with_image.py` | Merges final audio with an image into an MP4 video                              |
-
 ---
 
 ## 🛠 Folder Structure
@@ -60,8 +57,6 @@ python main.py
 │       ├── merge_audio_folder.py
 │       └── merge_audio_with_image.py
 ```
-
----
 
 ## 📦 Requirements 
 Install dependencies:
